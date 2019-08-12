@@ -1,3 +1,5 @@
+require_relative 'average_age'
+
 jane = {}
 jane["first_name"] = "Jane"
 jane["last_name"] = "Doe"
@@ -29,11 +31,5 @@ jason["current_salary"] = 0.00
 jason["languages"] = [ "C++", "Python" ]
 
 canditates = Array.[](jane, sara, jason)
-
-def average_age(people)
-
-    summedAge = people.map { |p| p["age"] }.reduce(0) { |sum, age| sum + age }
-        return summedAge/(people.length + 0.0)
-end
 
 puts average_age(canditates)
